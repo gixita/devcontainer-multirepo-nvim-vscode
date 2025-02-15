@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "test-env"
+version = "0.1.0"
+description = ""
+authors = ["Kris <kris@laermans.me>"]
+readme = "README.md"
+package-mode = false
+
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pre-commit = "^4.1.0"
+
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^1.15.0"
+ruff = "^0.9.6"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.mypy]
+exclude = ["alembic/", "tasks/", "site/"]
+check_untyped_defs = true
+disallow_untyped_defs = true
+ignore_missing_imports = true
+no_implicit_optional = true
+show_error_codes = true
+strict_equality = true
+warn_unused_ignores = true
+warn_redundant_casts = true
+warn_unreachable = true
+warn_return_any = true

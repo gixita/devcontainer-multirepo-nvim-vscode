@@ -1,0 +1,34 @@
+services:
+  project1:
+    build:
+      context: ../project1
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    networks:
+      - my-network
+    volumes:
+      - ../project1:/app
+      - ../nvim:/root/.config/nvim
+    environment:
+      - ENV_VAR=value
+    tty: true
+  project2:
+    build:
+      context: ../project2
+      dockerfile: Dockerfile
+    ports:
+      - "8001:8001"
+    networks:
+      - my-network
+    volumes:
+      - ../project2:/app
+    environment:
+      - ENV_VAR=value
+
+networks:
+  my-network:
+    driver: bridge
+
+#volumes:
+# Any named volumes can be defined here
