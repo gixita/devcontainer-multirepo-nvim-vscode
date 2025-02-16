@@ -1,6 +1,11 @@
 # External devcontainer configuration for python
 ## Purpose
-When your repo contains a generic devcontainer and you want to use NeoVim within the container and without impacting the other contributors.
+When your repo contains a generic devcontainer and you want to use NeoVim without impacting the other contributors.
+
+My use case:
+- SSH in a cloud VM (running Ubuntu without privileges, no sudo)
+- Build multiple services through the custom docker-compose.yml
+- Enter each containers and run nvim, run my service inside the container
 
 ## How to use it
 - Clone this repository
@@ -35,4 +40,10 @@ devcontainer exec --workspace-folder ./project1 --config .devcontainer/project1-
 ```
 Change project1 with your project folder.
 ```
+```
+Finally start working with 
+
+```sh
+poetry shell
+nvim
 ```
