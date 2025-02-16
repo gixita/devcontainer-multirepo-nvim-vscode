@@ -1,11 +1,21 @@
 # External devcontainer configuration for python
+## What you get
+
+!Alpha stage
+
+A devcontainer with Neovim configured for python.
+
+Neovim contains pyright as LSP, ruff as linter, mypy as typechecker. Debuggerpy is used for debugging and pytest for tests.
+
+Npm is installed only for pyright and tmux is installed but with default configuration.
+
 ## Purpose
-When your repo contains a generic devcontainer and you want to use NeoVim without impacting the other contributors.
+I clone this repo when the project repo on which I contribute contains a generic devcontainer and I want to use NeoVim without impacting the other contributors.
 
 My use case:
-- SSH in a cloud VM (running Ubuntu without privileges, no sudo)
+- SSH in a cloud VM (running Ubuntu without privilege, no sudo)
 - Build multiple services through the custom docker-compose.yml
-- Enter each containers and run nvim, run my service inside the container
+- Enter each container and run nvim, run my service inside the container
 
 ## How to use it
 - Clone this repository
