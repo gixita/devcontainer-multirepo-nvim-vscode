@@ -19,4 +19,20 @@ If you want to start fast, you can just clone my config inside the `devcontainer
 ```sh
 git clone https://github.com/gixita/neovim_config.git ./nvim/.
 ```
+## Run your devcontainer
 
+[Install first devcontainer cli if not yet done.](https://github.com/devcontainers/cli)
+
+Build and run the container
+
+```sh
+devcontainer up --workspace-folder ./project1 --config .devcontainer/project1-neovim/devcontainer.json
+```
+
+Enter the container
+```sh
+devcontainer exec --workspace-folder ./project1 --config .devcontainer/project1-neovim/devcontainer.json bash
+```
+Change project1 with your project folder.
+```
+```
