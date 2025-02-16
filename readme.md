@@ -1,7 +1,7 @@
 # External devcontainer configuration for python
 ## What you get
 
-!Alpha stage
+> **Warning**: Alpha stage and not fully tested.
 
 A devcontainer with Neovim configured for python.
 
