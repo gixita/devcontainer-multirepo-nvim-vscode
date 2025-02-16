@@ -10,14 +10,14 @@ Neovim contains pyright as LSP, ruff as linter, mypy as typechecker. Debuggerpy 
 Npm is installed only for pyright and tmux is installed but with default configuration.
 
 ## Purpose
-I clone this repo when the project repo on which I contribute contains a generic devcontainer and I want to use NeoVim without impacting the other contributors.
+I clone this repo when the project repo on which I contribute contains a generic devcontainer and I want to use NeoVim without impacting the other devs.
 
 My use case:
 - SSH in a cloud VM (running Ubuntu without privilege, no sudo)
 - Build multiple services through the custom docker-compose.yml
 - Enter each container and run nvim, run my service inside the container
 
-## How to use it
+## 
 - Clone this repository
 - Inside the folder "devcontainer-multirepo-nvim-vscode", clone your project.
 - Ensure that your project contains all the necessary development tools
