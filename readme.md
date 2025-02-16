@@ -11,3 +11,12 @@ poetry add pytest debuggerpy mypy ruff -G dev
 ```
 - Modify the `.devcontainer/project1-neovim/devcontainer.json` to your liking.
 
+## NeoVim configuration
+By adding your configuration inside the nvim folder, the container will be loaded with it.
+If you have an already working neovim configuration for python, just modify the `.devcontainer/docker-compose.yml` to mount your nvim config folder, which should be `~/.config/nvim`.
+
+If you want to start fast, you can just clone my config inside the `devcontainer-multirepo-nvim-vscode` folder:
+```sh
+git clone https://github.com/gixita/neovim_config.git ./nvim/.
+```
+
